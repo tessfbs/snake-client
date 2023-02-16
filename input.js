@@ -32,7 +32,16 @@ const handleUserInput = (command) => {
   if(command === "\u0064" ){
     console.log("Move: right")
     connection.write("Move: right");
-  }
+  } 
+  if(command === "\u0062" ){
+    console.log("pressed b: message: Hello!")
+    connection.write("Say: Hello");
+  } 
+  if(command === "\u0078" ){
+    console.log("pressed x: message: Hello!")
+    connection.write("Say: I will eat you");
+  } 
+  
 };
 
 module.exports = setupInput;
