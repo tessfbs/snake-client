@@ -17,8 +17,8 @@ const net = require("net");
     conn.on("connect", () => {
       console.log("Successfully connected to game server");
       conn.write("Name: TS");
+      
     });
-
   
     //Receiving data and console.log it for the player
     conn.on("data", (data) => {
